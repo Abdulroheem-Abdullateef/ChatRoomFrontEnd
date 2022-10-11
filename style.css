@@ -25,7 +25,7 @@ body {
     background-image: url(./assets/images/chat\ bg.jpg);
 }
 
-#input-username {
+.input-field {
     outline: white;
     border: 1px solid white;
     height: 3rem;
@@ -34,21 +34,22 @@ body {
     border-radius: 100px;
     text-align: center;
     font-weight: bold;
+    margin: 10px 0px;
 
 }
 
-#input-username:hover {
+.input-field:hover {
     transition: .3s;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-#input-username::placeholder {
+.input-field::placeholder {
     text-align: center;
     font-weight: bold;
 
 }
 
-#start-btn {
+.button {
     margin-top: 1rem;
     padding: 1rem;
     font-weight: bold;
@@ -71,6 +72,7 @@ body {
     background: white;
     height: 90%;
     width: 30%;
+    min-width: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: .5rem;
 
@@ -106,7 +108,7 @@ body {
 }
 
 
-.message-mine-container{
+.message-mine-container {
     display: flex;
     justify-content: flex-end;
 }
@@ -128,9 +130,9 @@ body {
 
 .message-mine {
 
-  
+
     padding-right: 2rem;
-   
+
     clip-path: polygon(0% 0%, 96% 0, 100% 0, 92% 8%, 92% 100%, 55% 100%, 0 100%);
 
 }
@@ -169,7 +171,7 @@ body {
     height: 85%;
 }
 
-#chat-wrapper::-webkit-scrollbar{
+#chat-wrapper::-webkit-scrollbar {
     width: .2rem;
     background-color: rgba(0, 0, 0, 0.192);
 }
@@ -199,4 +201,15 @@ body {
     margin-right: .7rem;
     color: rgba(0, 0, 255, 0.753);
     font-size: x-large;
+}
+
+#error-message {
+    color: red;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px 2px;
+}
+
+.hidden {
+    display: none;
 }
