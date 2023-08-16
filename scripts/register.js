@@ -21,7 +21,11 @@ let userDetails = {};
 
 const registerUserRequest = () => {
 
+<<<<<<< HEAD
     fetch('https://localhost:44310/api/Users/register', {
+=======
+    fetch('https://localhost:5001/api/Users/register', {
+>>>>>>> 778e9c4 (Newupdate)
         method: 'POST',
         body: JSON.stringify(userDetails),
         headers: {
@@ -47,7 +51,11 @@ const registerUserRequest = () => {
 }
 
 const loginUserRequest = () => {
+<<<<<<< HEAD
     fetch('https://localhost:44310/api/Users/login', {
+=======
+    fetch('https://localhost:5001/api/Users/login', {
+>>>>>>> 778e9c4 (Newupdate)
         method: 'POST',
         body: JSON.stringify(userDetails),
         headers: {
