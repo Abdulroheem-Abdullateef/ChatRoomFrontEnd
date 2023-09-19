@@ -12,11 +12,11 @@ let templateMine = "";
 let templateOther = "";
 
 const fetchAllChats = () => {
-<<<<<<< HEAD
+
     return fetch('https://localhost:44310/api/Chats')
-=======
+
     return fetch("https://localhost:5001/api/Chats")
->>>>>>> 778e9c4 (Newupdate)
+
         .then(res => res.json())
         .then(res => {
             console.log(res)
@@ -48,11 +48,10 @@ const sendMessage = () => {
 
     inputChat.value = '';
 
-<<<<<<< HEAD
     fetch('https://localhost:44310/api/Chats', {
-=======
+
     fetch('https://localhost:5001/api/Chats', {
->>>>>>> 778e9c4 (Newupdate)
+
         method: 'POST',
         body: JSON.stringify(msgObject),
         headers: {
@@ -132,11 +131,11 @@ const obj = {
 }
 var token = localStorage.setItem("token" , "dsfghjklcvgbnm");
 var reqyt = localStorage.getItem("token");
-<<<<<<< HEAD
+
 fetch("http://swifted-001-site1.etempurl.com/api/Admin/CreateAdmin", {
-=======
+
 fetch("https://localhost:5001/api/Users/register", {
->>>>>>> 778e9c4 (Newupdate)
+
     method: 'POST',
         body: JSON.stringify(obj),
         headers: {
